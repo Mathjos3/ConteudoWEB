@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<title>Pagina 4</title>
+	<style>
+		
+		#nome{
+			width: 300px;
+		}
+		fieldset{
+		width: 500px;
+		margin-top: 10px;
+		}
+		#email{
+			width: 300px;
+		}
+		#logradouro{
+			width: 300px;
+		}
+		#complemento{
+			width: 300px;
+		}
+		#cidade{
+			width: 200px;
+		}
+	</style>
+</head>
+
+<body>
+
+<p>Cadastro de Clientes</p> <br />
+
+<form method="POST" action="">
+<fieldset>
+	<legend>Dados Pessoais</legend>
+	<table width="100%">
+	<tr>
+		<th rowspan="5"> <img src="img\person-male.png" width="200px" height="200px" ></th>
+		<th>Nome</th>
+		<th><input type="text" name="nome" id="nome" required /> </th>
+		<th> &nbsp </th>
+		<th> &nbsp </th>
+	</tr>
+	<tr>
+		<td>Nascimento: </td>
+		<td> <input type="text" name="nascimento" id="nascimento" required /></td>
+		<td> &nbsp </td>
+		<td> &nbsp </td>
+	</tr>
+	<tr>
+		<td>Sexo: </td>
+		<td> <input type="radio" name="sexo" id="sexo" value="Masculino"/>Masculino
+		<input type="radio" name="sexo" id="sexo" value="Feminino"/>Feminino
+		</td>
+		<td> &nbsp </td>
+		<td> &nbsp</td>
+	</tr>
+	<tr>
+		<td>Formação:</td>
+		<td> <select  name="formacao">
+				<option value="Ensino Médio Incompleto">Ensino Médio Incompleto</option>
+				<option value="Ensino Médio Completo">Ensino Médio Completo</option>
+				<option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+				<option value="Ensino Superior Completo">Ensino Superior Completo</option>
+				<option value="Pós Graduação Incompleto">Pós Graduação Incompleto</option>
+				<option value="Pós Graduação Completo">Pós Graduação Completo</option>
+				<option value="Doutorado Incompleto">Doutorado Incompleto</option>
+				<option value="Doutorado Completo">Doutorado Completo</option>
+				</select></td>
+		<td> Profissão: </td>
+		<td> <select name="profissao">
+				<option value="Desenvolvedor de software">Desenvolvedor de software</option>
+				<option value="Especialistas em Experiência de Usuário/Cliente"> Especialistas em Experiência de Usuário/Cliente</option>
+				<option value="Creator">Creator</option>
+				<option value="Assessor de creators">Assessor de creators</option>
+				<option value="Professor online">Professor online</option>
+				<option value="Coaching">Coaching</option>
+				<option value="Coach de atividade física">Coach de atividade física</option>
+				<option value="Profissional de marketing digital">Profissional de marketing digital</option>
+				<option value="Analista de Big Data">Analista de Big Data</option>
+				<option value="Gestor de comunidade">Gestor de comunidade</option>
+				<option value="Coach de atividade física">Engenheiro ambiental</option>
+				<option value="Engenheiro ambiental">Engenheiro hospitalar</option>
+				<option value="Segurança da informação">Segurança da informação</option>
+				<option value="Gestor de resíduos">Gestor de resíduos</option>
+				<option value="Arquiteto e Engenheiro 3D">Arquiteto e Engenheiro 3D</option>
+				<option value="Desenvolvedor de dispositivos wearables">Desenvolvedor de dispositivos wearables</option>
+				<option value="Consultor de imagem">Consultor de imagem</option>
+				<option value="Gestor de inovação">Gestor de inovação</option>
+				<option value="Geneticista">Geneticista</option>
+				
+				<option value="Gestor de talentos">Gestor de talentos</option>
+				<option value="Representante de vendas internas">Representante de vendas internas</option>
+				<option value="Especialista em e-commerce">Especialista em e-commerce</option>
+				<option value="Profissionais de saúde mental">Profissionais de saúde mental</option>
+				<option value="Especialista em energias renováveis ou energias alternativas">Especialista em energias renováveis ou energias alternativas</option>
+				<option value="Gestor financeiro">Gestor financeiro</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>CPF: </td>
+		<td> <input type="text" name="cpf" id="cpf" required /></td>
+		<td> &nbsp </td>
+		<td> &nbsp </td>
+	</tr>
+</table>
+</fieldset>
+
+<fieldset>
+	<legend>Contato</legend>
+	<table width="100%">
+	<tr>
+		<th rowspan="5"> <a href="http://vanasilva.com.br/site/arquivos/1013"> <img src="img\contato.png"width="200px" height="200px"> </a>
+		
+		</th>
+		<th>Email</th>
+		<th><input type="email" name="email" id="email" required /> </th>
+		<th colspan="8"></th>
+		<th></th>
+	</tr>
+	<tr>
+		<td>Telefone: </td>
+		<td> <input type="text" name="nascimento" id="nascimento" required /></td>
+		<td> &nbsp </td>
+		<td> &nbsp </td>
+	</tr>
+	<tr>
+		<td>Celular: </td>
+		<td> <input type="text" name="Celular" id="Celular"/></td>
+		<td> &nbsp </td>
+		<td> &nbsp </td>
+	</tr>
+	<tr>
+		<td>Skype: </td>
+		<td> <input type="text" name="skype" id="skype">
+		<td> &nbsp </td>
+		<td> &nbsp </td>
+	</tr>
+	
+</table>
+</fieldset>
+<fieldset>
+	<legend>Endereço</legend>
+	<table width="100%">
+	<tr>
+		<th rowspan="5"> <img src="img\casa.png" width="200px" height="200px" ></th>
+		<th>Logradouro</th>
+		<th><input type="text" name="logradouro" id="logradouro" required /> </th>
+		<th> &nbsp </th>
+		<th> &nbsp </th>
+	</tr>
+	<tr>
+		<td>Número</td>
+		<td> <input type="number" name="numero" id="numero" required /></td>
+		<td>Cep</td>
+		<td> <input type="text" name="cep" id="cep" required /></td>
+	</tr>
+	<tr>
+		<td>Bairro</td>
+		<td> <input type="text" name="bairro" id="bairro" required /></td>
+		<td>Cidade</td>
+		<td> <input type="text" name="cidade" id="cidade" required /></td>
+	</tr>
+	<tr>
+		<td>Estado</td>
+		<td> <select name="estado">
+			<option value="ac">AC</option>
+			<option value="ac">AL</option>
+			<option value="ac">AP</option>
+			<option value="ac">AM</option>
+			<option value="ac">BA</option>
+			<option value="ac">CE</option>
+			<option value="ac">DF</option>
+			<option value="ac">ES</option>
+			<option value="ac">GO</option>
+			<option value="ac">MA</option>
+			<option value="ac">MT</option>
+			<option value="ac">MS</option>
+			<option value="ac">MG</option>
+			<option value="ac">PA</option>
+			<option value="ac">PB</option>
+			<option value="ac">PR</option>
+			<option value="ac">PE</option>
+			<option value="ac">PI</option>
+			<option value="ac">RJ</option>
+			<option value="ac">RN</option>
+			<option value="ac">RS</option>
+			<option value="ac">RO</option>
+			<option value="ac">RR</option>
+			<option value="ac">SC</option>
+			<option value="ac">SP</option>
+			<option value="ac">SE</option>
+			<option value="ac">TO</option>
+		</td>
+		<td> &nbsp </td>
+		<td> &nbsp </td>
+	</tr>
+	<tr>
+		<td>Complemento</td>
+		<td><input type="text" name="complemento" id="complemento" required /> </td>
+		<td> &nbsp </td>
+		<td> &nbsp </td>
+</fieldset>
+
+</form>
+</body>
+</html>
+
+<!-- <a href="link"> <img src="imagem.png"> </a>

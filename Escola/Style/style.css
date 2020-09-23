@@ -1,0 +1,82 @@
+﻿body{
+
+}
+
+
+#fundoAccess{
+background: url(Image_ShareData_713x400.jpg ) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+}
+
+#fundoExcel{
+background: url(microsoft-excel-2016-screenshot.png) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+}
+
+#fundoPowerPoint{
+background: url(microsoft-powerpoint.png) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+}
+
+#fundoWorl{
+background: url(create_start_screen_edit.png) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+}
+
+#fundoJava{
+background: url(176123.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+}
+
+#fundoVisio{
+background: url(microsoft-visio-2013-09-700x349.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+}
+
+
+#fundoC{
+background: url(176123.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+}
+
+#fundoProject{
+background: url(Microsoft-Project.png) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+}
+
+#fundoWindows{
+background: url(windows-1.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+}
+
+#fundotitulo{
+background-color: black;
+}
+

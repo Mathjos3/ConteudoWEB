@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<title>Pagina 6</title>
+	<style>
+	body{
+		margin: 0;
+		padding: 0;
+		font-family: arial;
+	}
+	li{
+		float: left;
+		padding-left: 10px;
+		color: white;
+	}
+	
+	#barra{
+		background-color: #cdcdcd;
+		padding: 6px;
+	}
+	#menupesquisa{
+		padding-left: 325px;
+	}
+	#pesquisa{
+		padding: 15px;
+		width: 90%;
+		border: none;
+	}
+	input{
+		background-color: #eeeeee;
+	}
+	#conteudo{
+		padding: 10px;
+		margin: 0;
+	}
+	#CEP{
+		width: 38%;
+		border: 1px solid black;
+		height: 25px;
+		background-color: white;
+	}
+	#calcularCep{
+		margin-top: 3px;
+		padding: 8px;
+		border: 1px solid black;
+	}
+	#numero{
+		width: 40px;
+		font-size: 20px;
+		height: 30px;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="barra">
+	<img src="img/menu.png" width="40" height="20">
+	</div>
+	
+	<div id="conteudo">
+	<table width="100%" >
+		<tr>
+			<td width="23%"> &nbsp; <span style="font-size: 40px; font-family: arial;"> <b> SHIRTSTORE </b> </span> </td>
+			<td width="14%" align="left">Bem-Vindo(a), Visitante!</td>
+			<td width="40%"> <span style="color: #b91a17;"> Login | Cadastrar </span> </td>
+			
+			<td> <span style="color: #b91a17;"> MEU PEDIDOS </span> </td> 
+			
+			<td align="right" width="5%"> <img src="img/carrinho.png" width="40" height="40"> 
+			</td>
+			<td>
+			<span style="color: #b91a17;"> MEU CARRINHO </span> <br />2 Item(s)
+			</td>
+		</tr>
+	</table>
+	 <br />
+	 
+	<table id="menupesquisa" width="100%" align="right" cellspacing="0">
+		<tr>
+			<td bgcolor="#b21c1e" align="center" > <span style="color: white; font-family: arial;"> <b>BUSCA</b> </span> </td>
+			<td bgcolor="#eeeeee" width ="45%" ><input type="text" name="pesquisa" id="pesquisa" placeholder="Digite o que você procura" required /> </td>
+			<td bgcolor="#949c98" align="center" > <span style="color: white; font-family: arial;"> <b>OK</b> </span> </td>
+			
+			<td bgcolor="#b91a17" align="right">
+			<img src="img/índice.png" width="30" height="30">&nbsp;
+			<img src="img/twitter.png" width="30" height="30">&nbsp;
+			<img src="img/blogger-logo-icon.png" width="30" height="30">&nbsp;
+			<img src="img/1024px-Logo_of_YouTube_(2015-2017).svg.png" width="60" height="30">&nbsp;
+			<img src="img/icon-04-512.png" width="30" height="30">&nbsp;
+			<img src="img/pinterest_circle-512.png" width="30" height="30">&nbsp;
+			<img src="img/vimeo.png" width="30" height="30">&nbsp;</td>
+			
+		</tr>
+	</table>
+	 <br />
+	 <br /><br />
+	 <p>
+	CARRINHO DE COMPRAS
+	<hr size="3" color="#404040"> <p>
+	
+	<div id="calcularCep">
+		Caso queira simular seu frete, informe seu CEP ao lado ou clique aqui para receber seu CEP &nbsp; &nbsp; &nbsp; <input type="text" name="CEP" id="CEP" required /> &nbsp; <span style="background-color: #606a6c; font-size: 15px; color: white; padding: 5px;"> <b>CALCULAR FRETE</b> </span>
+	</div>
+	<br />
+	
+	<table width="100%"  border="1" cellspacing=0 cellpadding=0 bordercolor="666633">
+		<tr>
+			<thead>
+			<tr>
+				<th colspan="2" align="left">&nbsp; Produto</th>
+				<th>Quant.</th>
+				<th>Valor Unitário</th>
+				<th>Entrega em até</th>
+				<th>Valor Total</th>
+				<th>Excluir</th>
+			</tr>
+			<thead>
+			<tbody>
+			<tr>
+				<td width="8%"> <img src="img/8c10f890b1.jpg" width="100" height="100"></td>
+				<td width="38%">Camiseta lega lega </td>
+				<td width="8%" align="center"> <input type="number" name="numero" id="numero" value="0" min="1" max="50" required/></td>
+				<td align="center"> R$ 49,00</td>
+				<td align="center"> - </td>
+				<td align="center"> R$ 49,00</td>
+				<td align="center"> icon </td>
+			</tr>
+			<tr>
+				<td> <img src="img/camiseta-lisa-algodao-masculina-vermelha.jpg" width="100" height="100"> </td>
+				
+				<td>Camiseta vermelha lisa</td>
+				<td width="8%" align="center"> <input type="number" name="numero" id="numero" value="0" min="1" max="50" required/></td>
+				<td align="center"> R$ 19,90</td>
+				<td align="center"> - </td>
+				<td align="center"> R$ 19,90</td>
+				<td align="center"> icon </td>
+			</tr>	
+			</tbody>
+		</tr>
+	</table> <br />
+	
+	<hr size="1" color="#404040"> <p>
+	<table width="100%">
+		<td width="15%">VALOR DO FRETE <br /> R$ 0,00</td>
+		<td>SUB TOTAL <br /> R$ 69,90</td>
+		<td align="right">TOTAL DA COMPRA: <b>R$ 68,90</b></td>
+	</table>
+	<hr size="1" color="#404040"> <p> <br />
+
+	<table width="100%">
+		<td width="80%" > <a href="#">Continuar Comprando<a> </td>
+		<td align="right">&nbsp; &nbsp; <span style="background-color:#606a6c; padding: 8px; color:white; font-size: 18px;" > Concluir a Compra </span> </td>
+	</table>
+
+</div>
+</body>
+</html>
+
+<!-- <hr width = "0" size = "40"> -->

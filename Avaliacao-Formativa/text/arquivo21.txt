@@ -1,0 +1,23 @@
+package EAStrings;
+
+import javax.swing.JOptionPane;
+
+public class ProcurarPalavra {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String frase, palavra;
+		int quantidadeDevezesDaPalavra=0,indice=0;
+		
+		frase=JOptionPane.showInputDialog("Digite uma frase:");
+		palavra=JOptionPane.showInputDialog("Qual palavra você quer contar a quantas vezes aparece na frase");
+		do {
+			indice=frase.indexOf(palavra, indice);
+			indice=indice+1;
+			if(indice!=0)
+				quantidadeDevezesDaPalavra=quantidadeDevezesDaPalavra+1;
+		} while (indice!=0);
+		JOptionPane.showMessageDialog(null, "Frase: "+frase+"\nQuantidade de vezes que a palavra "+palavra+" aparece: "+quantidadeDevezesDaPalavra);
+	}
+
+}

@@ -1,0 +1,272 @@
+﻿
+body{
+	margin: 0;
+	padding:0;
+	font-family: Oxygen,Century Gothic;
+	/*padding:0 60px 60px 60px; 1 2-direita 3-inferior 4-esquerda*/
+}
+
+/*
+body{
+	margin: 0;
+	font-size: 14px;
+	font-family: Arial;
+	padding:0 200px 0 200px;
+
+}
+*/
+
+#pesquisa{
+	border:none;
+	padding: 4px;
+}
+
+#barraInicio{
+	display: block;
+	padding-top: 0px;
+	
+}
+
+#barra2 li{
+	float: left;
+	padding-right: 30px;
+	overflow: hidden;
+	font-size: 20px;
+}
+
+#newsletters{
+	height: 200px;
+	font-size: 20px;
+	background: url(spotlight-03-NR.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 50px 0;
+}
+
+#newsletters table{
+	padding: 20px 0;
+}
+
+#newsletters tr{
+color: white;
+}
+
+#newsletters input{
+	width: 200px;
+	border: 1px solid #666666;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+#barraInicio td:hover{
+    background-color: #1a8bea;
+    color: #ffffff;
+}
+
+#barraInicio td{
+    height: 40px;
+}
+
+#bemvindo hgroup{
+	font-size: 25px;
+	font-family: Century Gothic;
+}
+
+	a{
+	color: #165b5b;
+	outline: none;
+	text-decoration: none;
+	}
+
+#bemvindo{
+	width:100%;
+	height: 500px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	text-align:center;
+	display: block;
+	color: #04192f;
+	background: url(spotlight-03-NR.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#navmenu{
+		display:table;
+		max-width: 100%;
+		position: relative;
+		display: block;
+	}
+	
+	#logo {
+		display:inline-block;
+		width: 348px;
+		height: 57px;
+		position:relative;
+	}
+	
+	.menu2 {
+		max-width: 100%;
+		list-style: none;
+		padding-left: 450px;
+		display: inline-block;
+		text-align: left;
+	}
+	
+	.menu2 li {
+		display:inline-block;
+		padding-right: 70px;
+		float: left;
+	}
+	
+	.menu2 li:hover {
+		background-color: #232323;
+	}
+
+	.menu2 a:hover {
+		color: white;
+	}
+
+
+#fundo{
+background: url(spotlight-03-NR.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+margin-top:0px;
+}
+
+#fundotitulo{
+background-color: #232323;
+font-size: 40px;
+color: white;
+text-align: center;
+padding: 5px;
+
+}
+
+#sessaoCLP{
+	padding: 20px;
+}
+
+#servico{
+	background-color: #70b0f5;
+}
+
+#titulo{
+    background-color: #0e63be;
+    color: white;
+    padding:5px;
+	margin: 0;
+	width: 100%;
+	display: block;
+	position: absolute;
+}
+/*
+#titulo:hover{
+	background-color: #b5c83f;
+	color: white;
+}*/
+
+#titulo td{
+	font-size: 20px;
+}
+
+#pesquisa{
+    width: 400px;
+    height: 32px;
+}
+
+#footerbg{
+	background-color: #232323;
+	color: white;
+}
+
+div#linha3{
+	width: 100%;
+	height: 500px;
+}
+div#linha3 #footer{
+	width: 980px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#linha2Conteudo{
+	padding-top: 15px;
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#linha2 figure img {
+	border: 8px solid #ccc;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+#footer_nav, #footer_comentarios, #form_nav{
+	width: 284px;
+	margin: 10px;
+	height: 400px;
+	padding: 10px;
+	float: left;
+}
+#footer_comentarios li{
+	margin-top: 15px;
+}
+#footer{
+	padding: 30px 0;
+}
+#footer .footer_title{
+	font-size: 1.2em;
+	margin-bottom: 40px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #919191;
+}
+#footer form label{
+	display:block;
+	width: 100%;
+	margin: 0 0 18px 0;
+}
+
+        @media only screen and (max-device-width: 900px) {
+    #navmenu { width:100%; } 
+    }
+
+#footer form label input{
+	width: 190px;
+	margin-top:5px;
+	height: 15px;
+}
+#footer form label input, #footer form textarea{
+	color: #ffffff;
+	background-color: #333333;
+	border: 1px solid #666666;
+	border-radius: 5px;
+	padding: 10px;
+}
+#footer form textarea{
+	width: 190px;
+	height: 120px;
+	resize: none;
+}
+#footer_nav ul li{
+	margin-top: 12px;
+	padding-top: 12px;
+	border-top: 1px solid #333333;
+}
+#copyright{
+	padding: 20px 0;
+	font-size: .85em;
+}
+#copyright p{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}

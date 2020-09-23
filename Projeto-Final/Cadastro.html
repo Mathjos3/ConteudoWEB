@@ -1,0 +1,481 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<title>Cadastro</title>
+   <link type="text/CSS" rel="stylesheet" href="style/Estilo.css" />
+   
+    <script language="javascript">
+	{
+		function numeros(){
+			tecla = event.keyCode;
+				if(tecla >=48 && tecla<=57){
+					return true;
+				}else{
+					return false;
+			}
+		}
+		
+		function letra(){
+			tecla = event.keyCode;
+				if(tecla >=97 && tecla<=122 || tecla>=65 && tecla<=90 || tecla>=128 && tecla<=165){
+					return true;
+				}else{
+					return false;
+				}
+			
+		}
+	}
+    </script>
+	
+<style>
+
+	body{
+		background-color: #c0c5cb;
+	}
+
+	fieldset{
+		width:90%;
+		background-color: #232323;;
+		border: none;
+	}
+	
+	#tabela table{
+		background-color: #f8f8f8;
+	}
+	
+	#tabela table tr:hover{
+		background-color: #4d5b78;
+		color: white;
+	}
+	
+	#tabela table th:hover{
+		background-color: #04192f;
+		color: white;
+	}
+	
+	legend{
+		background-color: red;
+		color: white;
+		font-size: 20px;
+	}
+	
+	input{
+	width: 90%;
+	border-collapse: collapse;
+	border: 1px solid black;
+	}
+
+	btEnviar{
+		width: 40%;
+	}
+	
+	tabela{
+		padding: 5px 0;
+	}
+	
+</style>
+</head>
+
+
+
+<body>
+	<br />
+<div id="tabela" align="center">
+	
+	<form method="POST" action="">
+<fieldset>
+
+	<legend>Curriculum</legend>
+	<br /><br />
+	<table width="90%" cellpadding="1" cellspacing="0">
+	
+	<tr>
+		<th colspan="4" align="left">IDENTIFICAÇÃO</th>
+	<tr>
+	<tr>
+		<td>Nome:</td>
+		<td><input type="text" name="nome" id="nome" onkeypress="return letra();"required /></td>
+	</tr>
+		<tr>
+		<td>Endereço: </td>
+		<td><input type="text" name="endereco" id="endereco" onkeypress="return letra();" required /> </td>
+		</tr>
+
+	<tr>
+		<td>Bairro:</td>
+		<td><input type="text" name="bairro" id="bairro" onkeypress="return letra();"required /> </td>
+		</tr>
+		<tr>
+		<td>Fone: </td>
+		<td><input type="text" name="fone" id="fone" onkeypress="return numeros();" required /> </td>
+	</tr>
+	<tr>
+		<td>Cidade:</td>
+		<td><input type="text" name="cidade" id="cidade" onkeypress="return letra();" required /> </td>
+		</tr>
+		<tr>
+		<td>CEP:</td>
+		<td><input type="text" name="cep" id="cep" onkeypress="return numeros();" required /> </td>
+	</tr>
+	<tr>
+		<td>Estado:</td>
+		<td><input type="text" name="cep" id="cep" onkeypress="return letra();" required /> </td>
+	</tr>
+	<tr>
+		<td>Nome do Pai:</td>
+		<td><input type="text" name="nomePai" id="nomePai" onkeypress="return letra();"required /> </td>
+		</tr>
+		<tr>
+		<td>Nome da Mãe:</td>
+		<td><input type="text" name="nomeMae" id="nomeMae" onkeypress="return letra();"required /> </td>
+	</tr>
+	<tr>
+		<td>Nacionalidade: </td>
+		<td><input type="text" name="nacionalidade" id="nacionalidade" onkeypress="return letra();"required /> </td>
+		</tr>
+		<tr>
+		<td>Naturalidade:</td>
+		<td><input type="text" name="naturalidade" id="naturalidade" onkeypress="return letra();"required /> </td>
+	</tr>
+	<tr>
+		<td>Estado Civil:</td>
+		<td><input type="text" name="estadoCivil" id="estadoCivil" onkeypress="return letra();"required /> </td>
+	</tr>
+	<tr>
+		<td>Grau de Instrução:</td>
+		<td><input type="text" name="gInstrucao" id="gInstrucao" onkeypress="return letra();"required /> </td>
+	</tr>
+	<tr>
+		<td>Cédula de Identidade nº:</td>
+		<td><input type="text" name="cIdentidade" id="cIdentidade" onkeypress="return numeros();" required /> </td>
+	</tr>
+	<tr>
+		<td>Carteira Profissional nº:</td>
+		<td><input type="text" name="cProfissional" id="cProfissional" onkeypress="return numeros();" required /> </td>
+		<td>Série</td>
+		<td><input type="text" name="serie" id="serie" onkeypress="return numeros();" required/>
+	</tr>
+	<tr>
+		<td>Carteira de Reservista nº:</td>
+		<td><input type="text" name="cReservista" id="cReservista" onkeypress="return numeros();" required /> </td>
+
+	</tr>
+	<tr>
+		<td>Título de Eleitor nº:</td>
+		<td><input type="text" name="cEleitor" id="cEleitor" onkeypress="return numeros();" required /> </td>
+		<td>Zona:</td>
+		<td><input type="text" name="zona" id="zona" onkeypress="return numeros();" required />
+	</tr>
+	<tr>
+		<td>Carteira de Habilitação nº: </td>
+		<td><input type="text" name="cHabiliracao" id="cHabiliracao" onkeypress="return numeros();" required /> </td>
+		<td>Categoria: </td>
+		<td><input type="text" name="categoria" id="categoria" onkeypress="return letra();"required/></td>
+	</tr>
+	<tr>
+		<td>CPF:</td>
+		<td><input type="text" name="cpf" id="cpf" onkeypress="return numeros();" required /> </td>
+	</tr>
+	
+	<tr>
+		<td colspan="4">&nbsp;</td>
+	</tr>
+	<tr>
+		<th colspan="4" align="left">ESCOLARIDADE</th>
+	</tr>
+	
+                <tr>
+                    <td>CURSO 1º Grau (1ª a 8ª série)</td>
+                </tr>
+                <tr>
+                    <td>Escola:</td>
+                    <td><input type="text" name="escola" id="escola" onkeypress="return letra();" required /> </td>
+                </tr>
+                <tr>
+                    <td>Cidade</td>
+                    <td><input type="text" name="cidadeCurso" id="cidadeCurso" onkeypress="return letra();" required /> </td>
+                    <td>Período</td>
+                    <td><input type="text" name="periodo" id="periodo" onkeypress="return letra();" required /> </td>
+                </tr>
+	<tr>
+		<td colspan="4">&nbsp;</td>
+	</tr>
+
+                <tr>
+                    <td>CURSO COLEGIAL OU EQUIVALENTE:</td>
+                </tr>
+                <tr>
+                    <td>Escola:</td>
+                    <td><input type="text" name="escolaCurso" id="escolaCurso" onkeypress="return letra();" required /> </td>
+                </tr>
+                <tr>
+                    <td>Cidade</td>
+                    <td><input type="text" name="cidadeCurso2" id="cidadeCurso2" onkeypress="return letra();" required /> </td>
+                    <td>Período</td>
+                    <td><input type="text" name="periodoColegial" id="periodoColegial" onkeypress="return letra();" required /> </td>
+                </tr>
+	<tr>
+		<td colspan="4">&nbsp;</td>
+	</tr>
+                <tr>
+                    <td>CURSO SUPERIOR:</td>
+                </tr>
+                <tr>
+                    <td>Universidade:</td>
+                    <td><input type="text" name="universidade" id="universidade" onkeypress="return letra();" required /></td>
+                </tr>
+                <tr>
+                    <td>Faculdade:</td>
+                    <td><input type="text" name="faculdade" id="faculdade" onkeypress="return letra();" required /></td>
+                    <td>Curso</td>
+                    <td><input type="text" name="cursoFaculdade" id="cursoFaculdade" onkeypress="return letra();" required /></td>
+                </tr>
+                <tr>
+                    <td>Cidade:</td>
+                    <td><input type="text" name="cidadeSuperior" id="cidadeSuperior" onkeypress="return letra();" required /></td>
+                    <td>Período:</td>
+                    <td><input type="text" name="periodoSuperior" id="periodoSuperior" onkeypress="return letra();" required /></td>
+                </tr>
+                <tr>
+		<tr>
+		<td colspan="4">&nbsp;</td>
+	</tr>
+	<tr>
+		<th colspan="4" align="left">CURSOS DE APERFEIÇOAMENTO, PÓS GRADUAÇÃO, SEMINÁRIOS, PALESTRAS, ETC.</th>
+	</tr>
+
+        <tr>
+            <td>Assunto:</td>
+            <td><input type="text" name="assunto" id="assunto" onkeypress="return letra();" required /></td>
+        </tr>
+
+        <tr>
+            <td>Entidade: </td>
+            <td><input type="text" name="entidade1" id="entidade1" onkeypress="return letra();" required /></td>
+            <td>Período:</td>
+            <td><input type="text" name="periodoEntidade" id="periodoEntidade" onkeypress="return letra();" required /></td>
+        </tr>
+        <tr>
+
+            <td>Assunto:</td>
+            <td><input type="text" name="assunto2" id="assunto2" onkeypress="return letra();" required /></td>
+        </tr>
+
+        <tr>
+            <td>Entidade: </td>
+            <td><input type="text" name="entidade2" id="entidade2" onkeypress="return letra();" required /></td>
+            <td>Período:</td>
+            <td><input type="text" name="periodoEntidade2" id="periodoEntidade2" onkeypress="return letra();" required /></td>
+        </tr>
+        <tr>
+            <td>Assunto:</td>
+            <td><input type="text" name="assunto3" id="assunto3" onkeypress="return letra();" required /></td>
+        </tr>
+
+        <tr>
+            <td>Entidade: </td>
+            <td><input type="text" name="entidade3" id="entidade3" onkeypress="return letra();" required /></td>
+            <td>Período:</td>
+            <td><input type="text" name="periodoEntidade3" id="periodoEntidade3" onkeypress="return letra();" required /></td>
+        </tr>
+				<tr>
+		<td colspan="4">&nbsp;</td>
+	</tr>
+                <tr>
+
+                    <td>EXPERIÊNCIA PROFISSIONAL</td>
+                </tr>
+
+                <tr>
+                    <td>Último empregador:</td>
+                    <td><input type="text" name="ultimoEmprega" id="ultimoEmprega" onkeypress="return letra();" required /></td>
+                </tr>
+
+                <tr>
+                    <td>Endereço:</td>
+                    <td><input type="text" name="enderecoExperiencia" id="enderecoExperiencia" required /></td>
+                    <td>Bairro:</td>
+                    <td><input type="text" name="bairroExperiencia" id="bairroExperiencia" onkeypress="return letra();" required /></td>
+                </tr>
+
+                <tr>
+                    <td>Cidade:</td>
+                    <td><input type="text" name="cidadeExperiencia" id="cidadeExperiencia" onkeypress="return letra();" required /></td>
+                    <td>Estado:</td>
+                    <td><input type="text" name="estadoExperiencia" id="estadoExperiencia" onkeypress="return letra();" required /></td>
+                </tr>
+                <tr>
+                    <td>Período:</td>
+                    <td><input type="text" name="peridoUltimo" id="periodoUltimo" onkeypress="return letra();" required /></td>
+                    <td>Cargo</td>
+                    <td> <input type="text" name="cargoUltimo" id="cargoUltimo" onkeypress="return letra();" required /> </td>
+                </tr>
+                <tr>
+                    <td>Função Desempenhada</td>
+                    <td><input type="text" name="funcaoUltimo" id="funcaoUltimo" onkeypress="return letra();" required/></td>
+                </tr>
+						<tr>
+		<td colspan="4">&nbsp;</td>
+	</tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Penúltimo empregador</td>
+                    <td><input type="text" name="penultimoEmprega" id="penultimoEmprega" onkeypress="return letra();" required /></td>
+                </tr>
+                <tr>
+                    <td>Endereço:</td>
+                    <td><input type="text" name="enderecoPenult" id="enderecoPenult" required /></td>
+                    <td>Bairro</td>
+                    <td><input type="text" name="bairroPenult" id="bairroPenult" onkeypress="return letra();" required/></td>
+                </tr>
+                <tr>
+                    <td>Cidade:</td>
+                    <td><input type="text" name="cidadePenult" id="cidadePenult" onkeypress="return letra();" required /></td>
+                </tr>
+                <tr>
+                    <td>Período:</td>
+                    <td><input type="text" name="peridoPenult" id="peridoPenult" onkeypress="return letra();" required/></td>
+                    <td>Cargo:</td>
+                    <td><input type="text" name="cargoPenult" id="cargoPenult" onkeypress="return letra();" required/></td>
+                </tr>
+                <tr>
+                    <td>Função Desempenhadas:</td>
+                    <td><input type="text" name="funcaoPenult" id="funcaoPenult" onkeypress="return letra();" required/></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Antipenultimo Empregador:</td>
+                    <td><input type="text" name="antiPenult" id="antiPenult" onkeypress="return letra();" required /></td>
+                </tr>
+                <tr>
+                    <td>Endereço:</td>
+                    <td><input type="text" name="enderecoAnti" id="enderecoAnti" required/></td>
+                    <td>Bairro:</td>
+                    <td><input type="text" name="bairroAnti" id="bairroAnti" onkeypress="return letra();" required/></td>
+                </tr>
+                <tr>
+                    <td>Cidade:</td>
+                    <td><input type="text" name="cidadeAnti" id="cidadeAnti" onkeypress="return letra();" required/></td>
+                    <td>Estado:</td>
+                    <td><input type="text" name="estadoAnti" id="estadoAnti" onkeypress="return letra();" required/></td>
+                </tr>
+                <tr>
+                    <td>Período:</td>
+                    <td><input type="text" name="peridoAnti" id="periodoAnti" onkeypress="return letra();" required/></td>
+                    <td>Cargo</td>
+                    <td><input type="text" name="cargoAnti" id="cargoAnti" onkeypress="return letra();" required/></td>
+                </tr>
+                <tr>
+                    <td>Funções Desempenhadas:</td>
+                    <td><input type="text" name="funcaoAnti" id="funcaoAnti" onkeypress="return letra();" required/></td>
+                </tr>
+				
+                <tr>
+		<td colspan="4">&nbsp;</td>
+	</tr>
+	<tr>
+		<th colspan="4" align="left">INFORMAÇÕES COMPLEMENTARES - Pessoas que possam fornecer informações pessoais.</th>
+	</tr>
+
+                <tr>
+                    <td>1º Pessoa</td>
+                </tr>
+                <tr>
+                    <td>Nome:</td>
+                    <td><input type="text" name="primeiraPessoa" id="primeiraPessoa" onkeypress="return letra();" required/></td>
+                </tr>
+                <tr>
+                    <td>Fone:</td>
+                    <td><input type="text" name="fonePessoa" id="fonePessoa" onkeypress="return numeros();" required/></td>
+                </tr>
+                <tr>
+                    <td>Endereço:</td>
+                    <td><input type="text" name="enderecoPessoa" id="enderecoPessoa" onkeypress="return numeros();" required/></td>
+                </tr>
+                <tr>
+                    <td>Cidade:</td>
+                    <td><input type="text" name="cidadePessoa" id="cidadePessoa" onkeypress="return letra();" required/></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>2º Pessoa</td>
+                </tr>
+                <tr>
+                    <td>Nome:</td>
+                    <td><input type="text" name="primeira2Pessoa" id="primeira2Pessoa" onkeypress="return letra();" required/></td>
+                </tr>
+                <tr>
+                    <td>Fone:</td>
+                    <td><input type="text" name="fone2Pessoa" id="fone2Pessoa" onkeypress="return numeros();" required/></td>
+                </tr>
+                <tr>
+                    <td>Endereço:</td>
+                    <td><input type="text" name="endereco2Pessoa" id="endereco2Pessoa" onkeypress="return letra();" required/></td>
+                </tr>
+                <tr>
+                    <td>Cidade:</td>
+                    <td><input type="text" name="cidade2Pessoa" id="cidade2Pessoa" onkeypress="return letra();" required/></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>3º Pessoa</td>
+                </tr>
+                <tr>
+                    <td>Nome:</td>
+                    <td><input type="text" name="primeira3Pessoa" id="primeira3Pessoa" onkeypress="return letra();" required/></td>
+                </tr>
+                <tr>
+                    <td>Fone:</td>
+                    <td><input type="text" name="fone3Pessoa" id="fone3Pessoa" onkeypress="return numeros();" required/></td>
+                </tr>
+                <tr>
+                    <td>Endereço:</td>
+                    <td><input type="text" name="endereco3Pessoa" id="endereco3Pessoa" onkeypress="return letra();" required/></td>
+                </tr>
+                <tr>
+                    <td>Cidade:</td>
+                    <td><input type="text" name="cidade3Pessoa" id="cidade3Pessoa" onkeypress="return letra();" required/></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+        <tr>
+            <td>INFORMAÇÕES ECONÔMICAS E FUNCIONAIS</td>
+        </tr>
+        <tr>
+            <td>Último Salário:</td>
+            <td><input type="text" name="ultimoSalario" id="ultimoSalario" onkeypress="return numeros();" required/></td>
+        </tr>
+        <tr>
+            <td>Salário Pretendido:</td>
+            <td><input type="text" name="salarioprent" id="salarioprent" onkeypress="return numeros();" required/></td>
+        </tr>
+        <tr>
+            <td>Outras Funções que se propõe a exercer::</td>
+            <td><input type="text" name="outraFuncao" id="outraFuncao" onkeypress="return letra();" required/></td>
+        </tr>
+    </table>
+	<br /><br />
+</fieldset>
+
+
+<input type="submit" id="btEnviar" value="Enviar" />
+	<input type="reset" id="btLimpar" value="Limpar" /> 
+</form> 
+</div>
+<br />
+	<p align="center"><a href="SiteIWEB.html"><span style="background-color: black; color: white; padding: 2px 0;">&nbsp;&nbsp;Home&nbsp;&nbsp;</span></a></p> 
+</body>
+
+</html>
+

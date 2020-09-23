@@ -1,0 +1,217 @@
+﻿/* --------- FORMATAÇÃO PAGINA ------------- */
+body{
+	margin: 0;
+	font-size: 14px;
+	font-family: Arial;
+	padding:0 100px 0 100px;
+}
+html{
+	background-color: #fafafa;
+}
+
+/* --------- CABEÇALHO ------------- */
+#menu
+ {	padding: 2px 0;
+	padding-top: 5px;
+	width: 100%;
+	background-color: #051515;
+	display: block;
+
+ }
+a{
+	color: #165b5b;
+	outline: none;
+	text-decoration: none;
+	}
+	
+	#barraMenu th:hover{
+	background-color: #5200cc;
+}
+
+ 
+#pesquisa{
+	width: 900px;
+	height: 30px;
+	border: 0 none;
+ }
+ 
+#pesquisar{
+ background-color:#E0EEEE;
+  border:solid 2px #5F9EA0;
+  border-radius:10px;
+  width:800px;
+  height:40px;
+ }
+ 
+ #txtBusca{
+ float:left;
+  background-color:transparent;
+  padding-left:8px; 
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:191px;
+}
+
+/* --------- AREA BEM-VINDO ------------- */
+#bemvindo{
+	width: 100%;
+	height: 300px;
+	margin-top:0px;
+	background-color: #248f8f;
+	color: white;
+	padding: 100px 0;
+}
+#bemvindo hgroup{
+	display: block;
+	width: auto;
+}
+
+#bemvindo hgroup h1, #bemvindo hgroup h2{
+	margin: 0;
+	font-weight: normal;
+	text-transform: none;
+	margin-left: 20px;
+}
+#bemvindo hgroup h1{
+	font-size: 120px;
+}
+#bemvindo hgroup h2{
+	font-size: 20px;
+}
+
+/* --------- FORMATAÇÃO FORMULARIO ------------- */
+form{
+	width: 600px;
+}
+ fieldset{
+	width: 60%;
+	border: 0 none;
+	background-color: #6fdcdc;
+ }
+ legend{
+	font-family: Arial;
+	font-weight: bold;
+ }
+ label{
+	display: block;
+	width: 130px;
+	float: left;
+	clear:left;
+ }
+input,select{
+	width: 300px;
+	margin-bottom: 0px;
+	border: 0 none;
+ }
+#sexo,#tipo{
+	width: auto;
+ }
+#logradouro{
+	width: 300px;
+ }
+ #numero{
+	width: 50px;
+ }
+ #cep{
+	width: 70px;
+ }
+#btEnviar,#btLimpar{
+	margin: 9px 0;
+	width: 80px;
+	height: 40px;
+ }
+
+
+ /* -------- HGROUP -------------- */
+ 	
+hgroup{
+	 text-align:center;
+ }
+ 
+hgroup h1{
+	margin: 5px;
+	font-size: 40px;
+}
+
+/* -------- CONTATO RODAPÉ -------------- */
+
+#contato{
+	padding: 6px 0;
+	background-color: #248f8f;
+	color: white;
+	height: 300px;
+}
+#contato a{
+
+	color: white;
+}
+
+/* -------- BARRA TITULO -------------- */
+
+#titulo{
+	color: white;
+	padding: 6px 0;
+	background-color: #051515;
+}
+
+#galeria{
+	padding: 0;
+	background-color: white;
+}
+#produtos{
+	padding: 0;
+	background-color: white;
+}
+#cadastro{
+	padding: 0;
+	background-color: white;
+}
+
+/* -------- ZOOM IMAGEM -------------- */
+
+.zoom {
+	overflow: hidden;
+}
+
+.zoom img {
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/* -------- FORMATAÇÃO SOBRE -------------- */
+
+#quemArea{
+width: 100%;
+	height: 300px;
+	margin-top:0px;
+	background-color: #248f8f;
+	color: white;
+	padding: 100px 0;
+}
+#quemArea hgroup{
+	display: block;
+	width: auto;
+}
+#quemArea hgroup h1, #quemArea hgroup h2{
+	margin: 0;
+	font-weight: normal;
+	text-transform: none;
+	margin-left: 20px;
+}
+#quemArea hgroup h1{
+	font-size: 120px;
+}
+#quemArea hgroup h2{
+	font-size: 20px;
+}
+
+
