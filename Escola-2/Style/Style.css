@@ -1,0 +1,120 @@
+﻿:root {
+    --shadow: 
+    0 2px 23px 0 rgba(0, 0, 0, 0.1),
+    0 2px 49px 0 rgba(0, 0, 0, 0.06);
+
+    --backgroundColor: #191c28;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* GRID AREA */
+.app {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    /* grid-template-rows: 25% 25% 25%; */
+    grid-template-areas: "header header" "aside app" "footer footer";
+    height: 100vh;
+}
+
+
+/* HEADER AREA */
+header {
+    grid-area: header;
+    background-color: var(--backgroundColor);
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    font-weight: bold;
+    color: #FFF;
+    font-size: 24px;
+}
+
+header img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    color: white;
+}
+
+.header-content a {
+    cursor: pointer;
+}
+
+.header-content a:hover {
+    color : rgb(70, 130, 243);
+}
+
+/* FIM HEADER AREA */
+
+/* MENU LATERAL AREA */
+aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    background-color: #dbdbdb;
+
+}
+
+.links {
+    margin: 20px 10px 10px;
+}
+
+.links a {
+    display: block;
+    color: #4b4b4b;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.links a:hover{
+    color : rgb(70, 130, 243);
+    font-weight: bold;
+}
+
+
+/* FIM MENU LATERAL AREA */
+
+#app {
+    grid-area: app;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FOOTER AREA */
+footer {
+    display: flex;
+    background-color: var(--backgroundColor);
+    justify-content: space-around;
+    grid-area: footer;
+    color: #FFF;
+    padding: 5px;
+    box-shadow: var(--shadow);
+}
+
+/* FIM FOOTER AREA */
+
+.teste {
+    border: 1px solid red;
+}

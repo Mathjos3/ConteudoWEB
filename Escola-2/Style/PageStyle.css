@@ -1,0 +1,201 @@
+.container{
+    margin: 20px;
+    color: #30363d;
+}
+
+.painel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.painel-title {
+    background-color: #191c28;;
+    font-family: Century Gothic;
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+}
+
+.teste{
+    border: 1px solid red;
+}
+
+.painel-icon img{
+    width: 200px;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.sctn-apresentacao p{
+    margin-top: 10px;
+}
+
+.sctn-recursos {
+    margin-top: 20px;
+}
+
+.tb {
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+.thead {
+    border: 1px solid #000;
+    color: #30363d;
+}
+
+.tb-head {
+    padding: 5px;
+}
+
+.tb-title-windows {
+    background-color: #0979d5;
+    text-align: center;
+    color: #FFF;
+}
+
+.tb-title-word {
+    background-color: #2a5699;
+    text-align: center;
+    color: #FFF;
+}
+
+.tb-title-excel {
+    background-color:#1b7345;
+    text-align: center;
+    color: #FFF;
+}
+
+.tb-title-access {
+    background-color:#a33639;
+    text-align: center;
+    color: #FFF; 
+}
+
+.tb-title-powerpoint {
+    background-color: #cb4a32;
+    text-align: center;
+    color: #FFF; 
+}
+
+.tb-title-project {
+    background-color: #2e7237;
+    text-align: center;
+    color: #FFF;
+}
+
+.tb-title-visio {
+    background-color: #39559f;
+    text-align: center;
+    color: #FFF;
+}
+
+.tb-title-java {
+    background-color: #0676b8;
+    text-align: center;
+    color: #FFF;
+}
+
+.tb-title-c {
+    background-color: #659ad2;
+    text-align: center;
+    color: #FFF;  
+}
+
+.tb-data {
+    text-align: justify;
+    padding: 5px;
+    color: #30363d;
+}
+
+.tb td {
+    border-bottom: 1px solid #000;
+}
+
+/* PAINEL AREA */
+
+.WindowsBG{
+    background: url('../Img/windows-1.jpg') no-repeat center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-bottom: 5px solid #2c5898;
+}
+
+.WordBG{
+    background: url('../Img/create_start_screen_edit.png') no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-bottom: 5px solid #2a5699;
+}
+
+.ExcelBG{
+    background: url('../Img/microsoft-excel-2016-screenshot.png') no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-bottom: 5px solid #1b7345;
+}
+
+.AccessBG{
+    background: url('../Img/Image_ShareData_713x400.jpg') no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-bottom: 5px solid #a33639;
+}
+
+.PowerPointBG{
+    background: url('../Img/microsoft-powerpoint.png') no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-bottom: 5px solid #cb4a32;
+}
+
+.ProjectBG{
+    background: url('../Img/Microsoft-Project-Standard_1.png') no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-bottom: 5px solid #2e7237;
+}
+
+.VisioBG{
+    background: url('../Img/microsoft-visio-2013-09-700x349.jpg') no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-bottom: 5px solid #39559f;
+}
+
+.JavaBG{
+    background: url('../Img/176123.jpg') no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-bottom: 5px solid #e92e32;
+}
+
+.LinguagemCBG{
+    background: url('../Img/176123.jpg') no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-bottom: 5px solid #659ad2;
+}

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mjos Informática</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="./Style/Style.css">
+</head>
+
+<body class="app">
+
+	<header>
+		<div class="header-content">
+			<img src="Img/mjosinfo.png" alt="Logo">
+			<a href="Index.html">
+				<h1>Mjos Informática</h1>
+			</a>
+		</div>
+	</header>
+
+	<aside>
+		<div class="links">
+			<h3>Links Internos</h3>
+			<a alink="windows.html"><i class="fas fa-link"></i> WIndows 10</a>
+			<a alink="word.html"><i class="fas fa-link"></i> Word</a>
+			<a alink="excel.html"><i class="fas fa-link"></i> Excel</a>
+			<a alink="Access.html"><i class="fas fa-link"></i> Access</a>
+			<a alink="Powerpoint.html"><i class="fas fa-link"></i> Powerpoint</a>
+			<a alink="Project.html"><i class="fas fa-link"></i> Project</a>
+			<a alink="Visio.html"><i class="fas fa-link"></i> Visio</a>
+			<a alink="Java.html"><i class="fas fa-link"></i> Java</a>
+			<a alink="linguagemc.html"><i class="fas fa-link"></i> Linguagem C</a>
+		</div>
+
+		<div class="links">
+			<h3>Links Externos</h3>
+			<a href="http://campinaszerbini.sp.senai.br" target="_blank"> <i class="fas fa-external-link-alt"></i> Senai Zerbini</a>
+		</div>
+
+	</aside>
+
+	<div id="app">Clique em um link para visualizar.</div>
+
+	<footer>
+		<h4>Rua Av. da Saudade, 125 - Ponte Preta</h4>
+		<h4>CEP: 13041-670 - Campinas - SP</h4>
+		<h4>Telefone: (19)3731-2840 </h4>
+		<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1837.4753686188553!2d-47.0562222!3d-22.915187799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cf3303ceff43%3A0xea485c60a4b21ef5!2sEscola+SENAI+Prof.+Dr.+Euryclides+de+Jesus+Zerbini!5e0!3m2!1spt-BR!2sbr!4v1534513549086" width="600px" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+	</footer>
+
+	<script>
+		document.querySelectorAll('[alink]').forEach(link => {
+			const app = document.getElementById('app')
+
+			link.onclick = function (e) {
+				e.preventDefault()
+				fetch(link.getAttribute('alink'))
+					.then(resp => resp.text())
+					.then(html => app.innerHTML = html)
+			}
+		})
+
+	</script>
+</body>
+
+</html>
